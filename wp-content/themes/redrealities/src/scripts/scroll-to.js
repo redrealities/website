@@ -1,7 +1,7 @@
 (function() {
   const scrollBtns = document.querySelectorAll('.scroll-to');
   scrollBtns.forEach(function(btn) {
-    const targetQuery = btn.getAttribute('href');
+    const targetQuery = btn.dataset.target;
     btn.addEventListener('click', function(e) {
       e.preventDefault();
       const target = document.querySelector(targetQuery);
